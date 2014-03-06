@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>a-webkit demo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../public/css/main.css" />
+    <script src="../public/js/jquery-1.9.1.min.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../public/js/angular/angular.min.js"></script>
+    <script src="../public/js/angular/angular-route.min.js"></script>
+    <script src="../public/js/highchart/highcharts.js"></script>
+    <script src="../public/js/highchart/gray.js"></script>
+    <script src="../routes/controller.js"></script>
+  </head>
+  <body>
+
+    <div class="main_cont" ng-app='wapp'>
+      <div class="well">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#/stu">添加学生</a></li>
+          <li><a href="#/sco">添加成绩</a></li>
+          <li><a href="#/rep">成绩图表</a></li>
+        </ul>
+      </div>
+
+      <div class="main_cont_right" ng-view>
+        
+      </div>
+    </div>
+
+  </body>
+</html>

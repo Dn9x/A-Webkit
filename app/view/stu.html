@@ -1,0 +1,24 @@
+  <div class="ctrl" ng-controller="StuCtrl">
+    
+  	<div class="panel panel-success">
+      <div class="panel-heading">添加学生</div>
+      <div class="panel-body">
+        <div class="col-xs-6">
+    		    <input type="text" ng-model="name" class="form-control" placeholder="学生名称">
+    		</div>
+    		<div class="col-xs-1">
+    			<button type="button" class="btn btn-primary" ng-click="submit()">添加</button>
+    		</div>
+      </div>
+    </div>
+
+	<div class="panel panel-success">
+      <div class="panel-heading">学生列表</div>
+      <div class="panel-body">
+		<span class="list-stu" ng-repeat="stu in stus">
+			<button type="button" class="btn btn-primary btn-sm">{{ stu.name }}</button>&nbsp;&nbsp;
+	    </span>
+      </div>
+    </div>
+
+  </div>

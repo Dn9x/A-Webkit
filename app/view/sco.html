@@ -1,0 +1,59 @@
+  <div class="ctrl" ng-controller="ScoCtrl">
+
+  	<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading">学生，科目信息</div>
+	  <div class="panel-body">
+	    学生：
+	    <span class="list-stu" ng-repeat="stu in stus">
+			<button type="button" ng-click='shows(stu.name)' class="btn btn-primary btn-sm">{{ stu.name }}</button>
+	    </span>
+
+	    <p/>
+	    科目：
+	    <span class="list-stu" ng-repeat="cla in clas">
+			<button type="button" ng-click='showc(cla.name)' class="btn btn-info btn-sm">{{ cla.name }}</button>
+	    </span>
+	  </div>
+	</div>
+
+	<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading">添加分数信息</div>
+	  <div class="panel-body">
+
+	    <div class="col-xs-2">
+		    <input type="text" ng-model="stuname" class="form-control" placeholder="学生">
+		</div>
+
+	    <div class="col-xs-2">
+		    <input type="text" ng-model="claname" class="form-control" placeholder="科目">
+		</div>
+	    <div class="col-xs-2">
+		    <input type="text" ng-model="score" class="form-control" placeholder="分数">
+		</div>
+		<div class="col-xs-2">
+			<button type="button" class="btn btn-primary" ng-click="addlist()">添加</button>
+		</div>
+		<div class="col-xs-1">
+			<button type="button" class="btn btn-primary" ng-click="submit()">添加入库</button>
+		</div>
+	  </div>
+
+	  <!-- Table -->
+	  <table class="table table-hover">
+	    <tr>
+	    	<td>编号</td>
+	    	<td>学生</td>
+	    	<td>科目</td>
+	    	<td>分数</td>
+	    </tr>
+		<tr ng-repeat="sco in scores">
+			<td>{{ $index+1 }}</td>
+	    	<td>{{ sco.stuname }}</td>
+	    	<td>{{ sco.claname }}</td>
+	    	<td>{{ sco.score }}</td>
+		</tr>
+	  </table>
+	</div>
+  </div>

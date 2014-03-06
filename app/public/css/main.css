@@ -1,0 +1,40 @@
+* {
+  -webkit-user-select: none;
+}
+
+body {
+  background-image: url('../image/htmlbg.png')
+}
+
+.main_cont{
+	position: absolute; 
+	left: 10px; 
+	right: 10px; 
+	top: 10px; 
+	bottom: 10px;
+}
+
+.well{
+	float: left;
+	width: 160px; 
+	padding: 8px;
+}
+
+.main_cont_right{
+	float: left; position: absolute; left: 200px; right: 0; top: 0; bottom: 10px;
+	background: #FFF; -webkit-border-radius: 2px; margin: 1px 1px 0px -19px;
+}
+
+.panel{
+	width: 96%;
+	margin: 10px auto;
+}
+
+.ctrl{
+	width: 99%;
+	height: auto;
+}
+
+.list-stu{
+	margin: 2px;
+}

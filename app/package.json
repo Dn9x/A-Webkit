@@ -1,0 +1,21 @@
+{
+  "name": "a-webkits",
+  "description": "this is about node-webkit and angularjs demo",
+  "version": "0.0.1",
+  "main": "index.html",
+  "window": {
+  	"title": "a-webkit",    
+    "toolbar": false,
+    "resizable" : true,
+    "always-on-top" : false,
+    "fullscreen" : false,
+    "position": "center",
+    "width": 340,
+    "height": 240
+  },
+  "dependencies": {
+    "mysql": "2.0.1",
+    "mysql-queues": "1.0.0",
+    "async": "0.2.10"
+  }
+}
